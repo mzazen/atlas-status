@@ -1,0 +1,38 @@
+[
+  {
+    "name": "تطبيق أطلس",
+    "url": "$SECRET_SITE",
+    "icon": "https://icons.duckduckgo.com/ip3/null.ico",
+    "slug": "ttbyq-atls",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 236,
+    "timeDay": 236,
+    "timeWeek": 236,
+    "timeMonth": 236,
+    "timeYear": 236,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "قواعد البيانات والخدمات",
+    "url": "$SECRET_SITE/api/health",
+    "icon": "https://icons.duckduckgo.com/ip3/null.ico",
+    "slug": "qwaed-albyanat-walkhdmat",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 786,
+    "timeDay": 786,
+    "timeWeek": 786,
+    "timeMonth": 786,
+    "timeYear": 786,
+    "dailyMinutesDown": {}
+  }
+]
