@@ -1,31 +1,76 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# حالة خدمات أطلس — Upptime (مفتوح المصدر، شغّال على GitHub Actions من غير سيرفر)
+# الروابط الحقيقية مخفية في السر SECRET_SITE (رابط التطبيق) — الصفحة عامة.
+owner: mzazen
+repo: atlas-status
+
+# اللي بيتعمله Issue لما خدمة تقع (GitHub بيبعتله إيميل وإشعار على الموبايل)
+assignees:
+  - mzazen
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
+  - name: تطبيق أطلس
     url: $SECRET_SITE
+  - name: قواعد البيانات والخدمات
+    url: $SECRET_SITE/api/health
+    maxResponseTime: 10000
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /atlas-status
+  name: حالة أطلس
+  introTitle: "حالة خدمات **أطلس**"
+  introMessage: تُحدَّث هذه الصفحة تلقائيًا كل خمس دقائق، وتُظهر حالة التطبيق وقواعد البيانات خلال الفترة الماضية.
   navbar:
-    - title: Status
+    - title: الحالة
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+  i18n:
+    activeIncidents: أعطال حالية
+    allSystemsOperational: جميع الخدمات تعمل بشكل طبيعي
+    incidentReport: "تقرير العطل #$NUMBER ←"
+    activeIncidentSummary: "بدأ في $DATE، وعدد التحديثات $POSTS"
+    incidentTitle: "العطل #$NUMBER — التفاصيل ←"
+    incidentDetails: تفاصيل العطل
+    incidentFixed: تم الإصلاح
+    incidentOngoing: مستمر
+    incidentOpenedAt: بدأ في
+    incidentClosedAt: انتهى في
+    incidentSubscribe: متابعة التحديثات
+    incidentViewOnGitHub: عرض على GitHub
+    incidentCommentSummary: "نُشر في $DATE بواسطة $AUTHOR"
+    incidentBack: "→ العودة إلى كل الأعطال"
+    pastIncidents: الأعطال السابقة
+    pastIncidentsResolved: "انتهى خلال $MINUTES دقيقة بعد $POSTS تحديث"
+    liveStatus: الحالة الآن
+    overallUptime: "نسبة التشغيل: $UPTIME"
+    overallUptimeTitle: نسبة التشغيل
+    averageResponseTime: "متوسط زمن الاستجابة: $TIME ملّي ثانية"
+    averageResponseTimeTitle: متوسط زمن الاستجابة
+    sevelDayResponseTime: زمن الاستجابة خلال ٧ أيام
+    responseTimeMs: زمن الاستجابة (ملّي ثانية)
+    up: تعمل
+    down: متوقفة
+    degraded: بطيئة
+    ms: ملّي ثانية
+    loading: جارٍ التحميل…
+    navGitHub: GitHub
+    footer: هذه الصفحة مبنية على [Upptime](https://upptime.js.org) مفتوح المصدر.
+    rateLimitExceededTitle: تم تجاوز حد الطلبات
+    rateLimitExceededIntro: تجاوزت عدد الطلبات المسموح في الساعة، حاول مرة أخرى لاحقًا.
+    error: حدث خطأ
+    errorIntro: تعذّر تحميل البيانات، حاول مرة أخرى.
+    errorText: التفاصيل
+    errorHome: العودة للرئيسية
+    pastScheduledMaintenance: الصيانة السابقة
+    scheduledMaintenance: صيانة مجدولة
+    scheduledMaintenanceSummaryStarted: "بدأت في $DATE لمدة $DURATION دقيقة"
+    scheduledMaintenanceSummaryStarts: "تبدأ في $DATE لمدة $DURATION دقيقة"
+    startedAt: بدأ في
+    startsAt: يبدأ في
+    duration: المدة
+    durationMin: "$DURATION دقيقة"
+    incidentCompleted: انتهى
+    incidentScheduled: مجدول
+    duration24H: ٢٤ ساعة
+    duration7D: ٧ أيام
+    duration30D: ٣٠ يوم
+    duration1Y: سنة
+    durationAll: الكل
